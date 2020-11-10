@@ -69,3 +69,5 @@ instance/
 # Virtualenv
 venv/
 .venv/
+.metals/metals.h2.db
+.metals/metals.log
