@@ -10,7 +10,7 @@ class Content(Mapping):
     @classmethod
     def load(cls, string):
         _, fm, content = cls.__regex.split(string, 2)
-        metadata = Content.load(fm, Loader = "FullLoader")
+        metadata = load(fm, Loader = FullLoader)
         return cls(metadata, content)
     
     def __init__(self, metadata: Dict, content):
